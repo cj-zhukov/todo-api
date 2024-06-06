@@ -1,3 +1,8 @@
 curl "http://localhost:8080/alive"
 curl "http://localhost:8080/ready"
 curl --request GET --url "http://localhost:8080/todos"
+curl --request POST --url "http://localhost:8080/todos" --header 'Content-Type: application/json' --data '{ "body": "learn Rust" }'
+curl --request GET --url "http://localhost:8080/todos/1"
+curl --request PUT --url "http://localhost:8080/todos/1" --header 'Content-Type: application/json' --data '{ "body": "learn Rust", "completed": true }'
+curl --request DELETE --url http://localhost:8080/todos/1
+
