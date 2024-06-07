@@ -5,7 +5,7 @@ todo-api is a Rust library that stores todo in postgres database with axum and s
 Use the package manager cargo or docker to install todo-api.
 
 ## Usage
-Postgres table todo will be created automatically because migrations are added. 
+Postgres table todos will be created automatically because migrations are added. 
 
 check service is alive:
 ```bash
