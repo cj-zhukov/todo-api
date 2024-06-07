@@ -39,5 +39,5 @@ curl --request PUT --url "http://localhost:8080/todos/1" --header 'Content-Type:
 
 delete created todo by id:
 ```bash
-curl --request DELETE --url http://localhost:8080/todos/1
+curl --request DELETE --url "http://localhost:8080/todos/1"
 ```
