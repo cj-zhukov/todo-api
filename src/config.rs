@@ -35,6 +35,8 @@ impl Config {
             .connect(&url)
             .await?;
 
+        sqlx::migrate!().run(&pool).await?;
+
         Ok(pool)
     }
 }

@@ -1,5 +1,5 @@
 {
-    "server": "loclhost",
+    "server": "localhost",
     "user": "foo",
     "database": "bar",
     "port": "5432",
