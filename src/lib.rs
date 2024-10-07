@@ -13,7 +13,7 @@ use tower_http::trace::TraceLayer;
 use tracing_subscriber::{filter::LevelFilter, fmt, prelude::*, EnvFilter};
 
 const MAX_ROWS: u32 = 10;
-const TODO_TABLE_NAME: &str = "todos";
+const TABLE_NAME: &str = "todos";
 
 #[derive(Serialize, Deserialize, Debug, Clone, sqlx::FromRow)]
 pub struct Todo {
@@ -53,7 +53,7 @@ impl UpdateTodo {
 
 impl Todo {
     fn table_name() -> String {
-        TODO_TABLE_NAME.to_string()
+        TABLE_NAME.to_string()
     }
 
     pub async fn list(pool: PgPool) -> Result<Vec<Todo>> {
