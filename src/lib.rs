@@ -211,13 +211,4 @@ mod tests {
         let all_rows = Todo::list(pool).await.unwrap();
         assert!(all_rows.is_empty());
     }
-
-    // #[tokio::test]
-    // async fn get_one() {
-    //     let config = Config::new("config.json").await.unwrap();
-    //     let pool = config.connect().await.unwrap();
-    //     let todo = Todo::read(pool, 1).await.unwrap();
-    //     assert_eq!(1, todo.id);
-    //     assert_eq!("foo".to_string(), todo.body);
-    // }
 }
